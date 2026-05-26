@@ -45,7 +45,7 @@ spec:
     redis:
       persistence:
         enabled: false
-        storageClass: standard
+        storageClass: nfs-client
       resources:
         requests:
           cpu: 100m
@@ -56,17 +56,17 @@ spec:
 
     persistence:
       primary:
-        storageClass: standard
+        storageClass: nfs-client
         accessMode: ReadWriteOnce
 
     mongo:
       persistence:
         enabled: true
-        storageClass: standard
+        storageClass: nfs-client
         accessMode: ReadWriteOnce
 
     postgres:
       persistence:
         enabled: true
-        storageClass: standard
+        storageClass: nfs-client
         accessMode: ReadWriteOnce
