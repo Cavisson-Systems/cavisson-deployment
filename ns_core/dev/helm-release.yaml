@@ -61,7 +61,7 @@ spec:
 
     mongo:
       persistence:
-        enabled: true
+        enabled: false
         storageClass: nfs-client
         accessMode: ReadWriteOnce
 
