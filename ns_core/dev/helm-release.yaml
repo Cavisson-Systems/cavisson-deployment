@@ -26,7 +26,7 @@ spec:
   chart:
     spec:
       chart: cavisson-platform
-      version: "4.15.0-B111"
+      version: "4.15.1-B0"
       sourceRef:
         kind: HelmRepository
         name: artifact-keeper
@@ -40,7 +40,7 @@ spec:
           memory: 1Gi
         limits:
           cpu: 2000m
-          memory: 8Gi
+          memory: 12Gi
 
     redis:
       persistence:
